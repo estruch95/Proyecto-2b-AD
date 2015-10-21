@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libros>
+<libro>
+<titulo>Hojas movidas por el viento</titulo>
+<autor>Pedro</autor>
+<publicacion>1990</publicacion>
+<editor>Anaya</editor>
+<paginas>250</paginas>
+</libro>
+<libro>
+<titulo>En la cima</titulo>
+<autor>Juan</autor>
+<publicacion>1999</publicacion>
+<editor>Bromera</editor>
+<paginas>145</paginas>
+</libro>
+<libro>
+<titulo>El hecho de progresar</titulo>
+<autor>Adrian</autor>
+<publicacion>2003</publicacion>
+<editor>Anaya</editor>
+<paginas>440</paginas>
+</libro>
+</libros>
