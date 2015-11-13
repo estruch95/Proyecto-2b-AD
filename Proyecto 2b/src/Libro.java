@@ -1,26 +1,27 @@
 import java.io.Serializable;
+import java.util.ArrayList;
 
 
 public class Libro implements Serializable{
-	//Atributos de la clase Libro
+	//ATRIBUTOS DE LA CLASE
 	private String titulo;
-	private String autor;
-	private int publicacion;
+	private int anyo;
+	private ArrayList<String> autor;
 	private String editor;
 	private int paginas;
 	
-	//Parametros que recibe el constructor de la clase libro
-	public Libro(String t, String a, int pu, String e, int pa) {
+	//CONSTRUCTOR
+	public Libro(String titulo, int anyo, String nombre, String apellido, String editor, int paginas) {
 		// TODO Auto-generated constructor stub
-		titulo = t;
-		autor = a;
-		publicacion = pu;
-		editor = e;
-		paginas = pa;
+		this.titulo = titulo;
+		this.anyo = anyo;
+		this.autor.add(nombre);
+		this.autor.add(apellido);
+		this.editor = editor;
+		this.paginas = paginas;
 	}
 
-	//Getters y Setters de los atributos de la clase Libro
-	
+	//GETTERS AND SETTERS
 	public String getTitulo() {
 		return titulo;
 	}
@@ -28,21 +29,13 @@ public class Libro implements Serializable{
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-
-	public String getAutor() {
+	
+	public ArrayList<String> getAutor() {
 		return autor;
 	}
 
-	public void setAutor(String autor) {
+	public void setAutor(ArrayList<String> autor) {
 		this.autor = autor;
-	}
-
-	public int getPublicacion() {
-		return publicacion;
-	}
-
-	public void setPublicacion(int publicacion) {
-		this.publicacion = publicacion;
 	}
 
 	public String getEditor() {
@@ -61,7 +54,7 @@ public class Libro implements Serializable{
 		this.paginas = paginas;
 	}
 	
-	//Método cuya función es imprimir por consola el título del objeto Libro
+	//MÉTODO CUYA FUNCIÓN ES REALIZAR IMPRESO
 	public void print(){
 		System.out.println("Titulo: "+this.getTitulo());
 	}

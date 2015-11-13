@@ -20,17 +20,16 @@ import org.w3c.dom.Text;
 
 
 public class Marshaller {
-	//Atributos de la clase
+	//ATRIBUTOS
 	private Document dom = null;
 	private ArrayList<Libro> libros = null;
 	
-	//Constructor
+	//CONSTRUCTOR
 	public Marshaller(ArrayList<Libro> l) {
-		//Almacenamos el array que recibe este objeto(Marshaller.java) al ser creado en "libros"
 		this.libros = l;
 	}
 	
-	/* Método cuya función es generar la instancia para "dom" (Crear objeto Document sobre el cual trabajar) */
+	//MÉTODO CUYA FUNCIÓN ES CREAR EL CREAR EL DOCUMENTO RAÍZ
 	public void crearDocumento(){
 		//Creamos un objeto DocumentBuilderFactory
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
