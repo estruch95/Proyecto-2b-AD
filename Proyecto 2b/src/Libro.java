@@ -13,6 +13,7 @@ public class Libro implements Serializable{
 	//CONSTRUCTOR
 	public Libro(String titulo, int anyo, String nombre, String apellido, String editor, int paginas) {
 		// TODO Auto-generated constructor stub
+		this.autor = new ArrayList<String>();
 		this.titulo = titulo;
 		this.anyo = anyo;
 		this.autor.add(nombre);
@@ -54,6 +55,14 @@ public class Libro implements Serializable{
 		this.paginas = paginas;
 	}
 	
+	public int getAnyo() {
+		return anyo;
+	}
+
+	public void setAnyo(int anyo) {
+		this.anyo = anyo;
+	}
+
 	//MÉTODO CUYA FUNCIÓN ES REALIZAR IMPRESO
 	public void print(){
 		System.out.println("Titulo: "+this.getTitulo());

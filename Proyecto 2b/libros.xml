@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libros>
 <libro>
-<titulo>Hojas movidas por el viento</titulo>
-<autor>Pedro</autor>
-<publicacion>1990</publicacion>
+<titulo anyo="2008">Hojas movidas por el viento</titulo>
+<autor>
+<nombre>Pedro</nombre>
+<nombre>Sanchez</nombre>
+</autor>
 <editor>Anaya</editor>
 <paginas>250</paginas>
 </libro>
 <libro>
-<titulo>En la cima</titulo>
-<autor>Juan</autor>
-<publicacion>1999</publicacion>
+<titulo anyo="1999">En la cima</titulo>
+<autor>
+<nombre>Juan</nombre>
+<nombre>Perpinya</nombre>
+</autor>
 <editor>Bromera</editor>
 <paginas>145</paginas>
 </libro>
 <libro>
-<titulo>El hecho de progresar</titulo>
-<autor>Adrian</autor>
-<publicacion>2003</publicacion>
+<titulo anyo="2004">El hecho de progresar</titulo>
+<autor>
+<nombre>Adrian</nombre>
+<nombre>Canaya</nombre>
+</autor>
 <editor>Anaya</editor>
 <paginas>440</paginas>
 </libro>

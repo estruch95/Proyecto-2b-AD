@@ -12,9 +12,9 @@ public class Marshaller_libro {
 	public static void main(String[] args) {
 		//Declaración de atributos de la clase
 		libros = new ArrayList<Libro>();
-		libro1 = new Libro("Hojas movidas por el viento", "Pedro", 1990, "Anaya", 250);
-		libro2 = new Libro("En la cima", "Juan", 1999, "Bromera", 145);
-		libro3 = new Libro("El hecho de progresar", "Adrian", 2003, "Anaya", 440);
+		libro1 = new Libro("Hojas movidas por el viento", 2008, "Pedro","Sanchez", "Anaya", 250);
+		libro2 = new Libro("En la cima", 1999, "Juan", "Perpinya", "Bromera", 145);
+		libro3 = new Libro("El hecho de progresar", 2004, "Adrian", "Canaya", "Anaya", 440);
 		
 		//Cargado de datos en el ArrayList<Libro> libros
 		libros.add(libro1);

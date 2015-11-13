@@ -31,7 +31,7 @@ public class Marshaller {
 	
 	//MÉTODO CUYA FUNCIÓN ES CREAR EL CREAR EL DOCUMENTO RAÍZ
 	public void crearDocumento(){
-		//Creamos un objeto DocumentBuilderFactory
+		//OBJETO DOCUMENTBUILDERFACTORY
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
 		//Captura de errores mediante cápsula try/catch
@@ -77,6 +77,7 @@ public class Marshaller {
 		//TÍTULO
 		//Creamos elemento titulo
 		Element tituloEle = dom.createElement("titulo");
+		tituloEle.setAttribute("anyo", String.valueOf(l.getAnyo()));
 		//Creamos nodo de texto para el título y lo guardamos en "titulo"
 		Text titulo = dom.createTextNode(l.getTitulo());
 		//Añadimos al elemento titulo el nodo de texto "titulo" creado anteriormente
@@ -86,15 +87,16 @@ public class Marshaller {
 		
 		//AUTOR (Pasos explicados anteriormente)
 		Element autorEle = dom.createElement("autor");
-		Text nombre = dom.createTextNode(l.getAutor());
-		autorEle.appendChild(nombre);
-		elementoLibro.appendChild(autorEle);
+		Element nombreEle1 = dom.createElement("nombre");
+		Element nombreEle2 = dom.createElement("nombre");
 		
-		//PUBLICACIÓN
-		Element publicacionEle = dom.createElement("publicacion");
-		Text publicacion = dom.createTextNode(String.valueOf(l.getPublicacion()));
-		publicacionEle.appendChild(publicacion);
-		elementoLibro.appendChild(publicacionEle);
+		autorEle.appendChild(nombreEle1);
+		autorEle.appendChild(nombreEle2);
+		
+		nombreEle1.setTextContent(l.getAutor().get(0));
+		nombreEle2.setTextContent(l.getAutor().get(1));
+		
+		elementoLibro.appendChild(autorEle);
 		
 		//EDITOR
 		Element editorEle = dom.createElement("editor");
